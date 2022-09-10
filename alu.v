@@ -1,8 +1,10 @@
+// ALU Module 
+
 module alu (in1, in2, EXECUTE_command, out);
 
-input [31:0] in1, in2;
-input [3:0] EXECUTE_command;
-output reg [31:0] out;
+    input [31:0] in1, in2; // 32 bit Input Register size
+    input [3:0] EXECUTE_command; // 4 bit Execution Command Size
+    output reg [31:0] out; // 32 bit Output Register size
 
 always @( * ) begin
     case (EXECUTE_command)
