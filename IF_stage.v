@@ -1,7 +1,7 @@
-module IF_stage (clock1, clock2, branch_check, branch_address, PC, instruction);
+module IF_stage (clock1, clock2, stall, branch_check, branch_address, PC, instruction);
 
-    input clock1, clock2, branch_check;
-    input branch_address;
+    input clock1, clock2, branch_check, stall;
+    input [31:0] branch_address;
     output reg [31:0] PC;
     output [31:0] instruction;
 
