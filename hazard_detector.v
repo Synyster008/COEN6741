@@ -1,4 +1,5 @@
-module hazard_detector(immediate_check, store_check, source1_INSTRUCTION_DECODE, source2_INSTRUCTION_DECODE, destination_EXECUTE, destination_MEMORY, hazard, writeback_EXECUTE, writeback_MEMORY, MEMORY_READ_EXECUTE, branch_command, forward);
+module hazard_detector(immediate_check, store_check, source1_INSTRUCTION_DECODE, source2_INSTRUCTION_DECODE, destination_EXECUTE, destination_MEMORY, hazard, writeback_EXECUTE, writeback_MEMORY, MEMORY_READ_EXECUTE,
+ branch_command, forward);
     input [4:0] source1_INSTRUCTION_DECODE, source2_INSTRUCTION_DECODE, destination_EXECUTE, destination_MEMORY;
     input [1:0] branch_command;
     input writeback_EXECUTE, writeback_MEMORY, MEMORY_READ_EXECUTE, forward, immediate_check, store_check;

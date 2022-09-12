@@ -1,6 +1,5 @@
-module data_memory(clock1, clock2, address, data_input, data_output, MEMORY_READ, MEMORY_WRITE, WRITEBACK);
+module data_memory(clock1, clock2, address, data_input, data_output, MEMORY_READ, MEMORY_WRITE);
     input clock1, clock2, MEMORY_READ, MEMORY_WRITE;
-    input [31:0] WRITEBACK;
     input [31:0] address, data_input;
 
     output reg [31:0] data_output;
