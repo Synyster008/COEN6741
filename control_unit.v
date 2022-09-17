@@ -42,6 +42,7 @@ module control_unit (opcode, branch, EXECUTE_command, branch_command, immediate_
             6'b000110: begin //DIV
                 EXECUTE_command <= 4'b0011;
                 WRITEBACK <= 2'b11;
+                store_check <= 1;
             end
             6'b000111: begin //J
                 EXECUTE_command <= 4'b0000;
@@ -59,10 +60,11 @@ module control_unit (opcode, branch, EXECUTE_command, branch_command, immediate_
                 immediate_check <= 1;
                 branch <= 1;
                 branch_command <= 2'b11;
+                store_check <= 1;
             end
             6'b001010: begin //LL
                 EXECUTE_command <= 4'b0001;
-                WRITEBACK <= 2'b01;
+                WRITEBACK <= 2'b10;
                 immediate_check <= 1;
                 MEMORY_READ <= 1;
                 store_check <= 1;

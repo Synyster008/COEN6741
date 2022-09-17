@@ -1,4 +1,4 @@
-module mux #(parameter integer LENGTH) (in1, in2, in3, select, out);
+module mux3_1 #(parameter integer LENGTH) (in1, in2, in3, select, out);
 
 input [1:0] select;
 input [LENGTH-1:0] in1, in2, in3;

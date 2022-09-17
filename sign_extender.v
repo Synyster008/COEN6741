@@ -1,4 +1,4 @@
-module signExtend (in, out, sign_check);
+module sign_extender (in, out, sign_check);
 
   input sign_check;
   input [15:0] in;
